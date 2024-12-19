@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <title>Prisustvo</title>
+    <form id="formaPrisustvo" action="dajPrisustvo" method="post">
+        <label for="kodPredmeta">Kod predmeta:</label>
+        <input type="text" id="kodPredmeta" name="kodPredmeta">
+        <br>
+        <label for="indexStudenta">Index studenta:</label>
+        <input type="text" id="indexStudenta" name="indexStudenta">
+        <br>
+        <label for="sedmica">Sedmica:</label>
+        <input type="text" id="sedmica" name="sedmica">
+        <br>
+        <input type="submit" value="Daj prisustvo">
+    </form>
+
+    <div id="odgovorServera"></div>
+    <table id="tabelaPrisustvo" style="display:none;">
+        <tr>
+            <th>Prisustvo za sedmicu</th>
+            <th>Vrijednost</th>
+        </tr>
+        <tr>
+            <td>Prisutan</td>
+            <td id="prisutan"></td>
+        </tr>
+        <tr>
+            <td>Odsutan</td>
+            <td id="odsutan"></td>
+        </tr>
+        <tr>
+            <td>Nije uneseno</td>
+            <td id="nijeUneseno"></td>
+        </tr>
+    </table>
+    <script src="prisustvo.js"></script>
+    <script src="AjaxPozivi.js"></script>
+</body>
+
+</html>
